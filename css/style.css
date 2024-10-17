@@ -1,6 +1,6 @@
 /* Basic styling for the site */
 body {
-    background-image: url('/downloads/bg-home.jpg'); /* Replace with the path to your image */
+    background-image: url('../downloads/bg-home.jpg'); /* Replace with the path to your image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
