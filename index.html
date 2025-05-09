@@ -1,327 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inek Arkadaslari</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
     <header>
-      <nav>
-        <ul>
-          <li>
-            <a href="#" class="nav-link" onclick="showSection('home')">Home</a>
-          </li>
-          <li>
-            <a href="#" class="nav-link" onclick="showSection('project')"
-              >Project</a
-            >
-          </li>
-          <li>
-            <a href="#" class="nav-link" onclick="showSection('documents')"
-              >Reports</a
-            >
-          </li>
-          <li>
-            <a href="#" class="nav-link" onclick="showSection('members')"
-              >Members</a
-            >
-          </li>
-        </ul>
-      </nav>
+        <nav>
+            <ul>
+                <li><a href="#" class="nav-link" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" class="nav-link" onclick="showSection('project')">Project</a></li>
+                <li><a href="#" class="nav-link" onclick="showSection('documents')">Reports and Files</a></li>
+                <li><a href="#" class="nav-link" onclick="showSection('members')">Members</a></li>
+            </ul>
+        </nav>
     </header>
 
     <section id="home" class="content-section">
-      <h1>Welcome to Home Page</h1>
-      <p>This is the home section of the website.</p>
-      <ul>
-        <li>
-          <a href="downloads/CS491_demo_presentation.pdf" download>
-            CS491 Project Presentation (PDF)
-          </a>
-        </li>
-        <li><a href="downloads/CS492_demo_presentation.pdf" download> CS492 Project Presentation (PDF) </a></li>
-      </ul>
-      <div>
-        <h1>EDUX: For Effective Student Learning</h1>
-        <h2>Introduction</h2>
-        <p>
-          The presentation focuses on an innovative educational platform
-          designed to democratize and enhance access to education globally. The
-          global education market is valued at USD 5.4 trillion in 2023, with
-          projections to reach USD 9.8 trillion by 2030.
-        </p>
-
-        <h2>Key Features</h2>
-        <ul>
-          <li>
-            <strong>System Architecture:</strong> Overview of the technical
-            foundation.
-          </li>
-          <li>
-            <strong>Interactive Learning Tools:</strong> Includes courses, skill
-            trees, quizzes, and flashcards.
-          </li>
-        </ul>
-
-        <h2>Progress and Planning</h2>
-        <ul>
-          <li>Updates on task progression and project plans.</li>
-          <li>Highlights contributions from team members.</li>
-        </ul>
-
-        <h2>User Feedback</h2>
-        <p>
-          Surveys reveal high ratings for features like quizzes and interfaces.
-          Areas identified for improvement include:
-        </p>
-        <ul>
-          <li>Content upload and analysis.</li>
-          <li>Adaptability of study plans.</li>
-          <li>Support for complex subjects.</li>
-        </ul>
-
-        <h2>Business Model</h2>
-        <ul>
-          <li>
-            <strong>Revenue:</strong> Subscription-based with tiered plans.
-          </li>
-          <li>
-            <strong>Platform:</strong> Initial web application with plans for
-            mobile expansion upon reaching a user threshold.
-          </li>
-          <li><strong>Target Audience:</strong> University students.</li>
-          <li>
-            <strong>Marketing:</strong> Social media campaigns on platforms
-            popular among students, such as Instagram and TikTok.
-          </li>
-        </ul>
-
-        <h2>Conclusion</h2>
-        <p>
-          The presentation concludes with a demo, areas for improvement, and a
-          Q&A session.
-        </p>
-      </div>
+        <h1>Welcome to Home Page</h1>
+        <p>This is the home section of the website.</p>
+        <div>
+            <h1>EDUX: For Effective Student Learning</h1>
+            <h2>Introduction</h2>
+            <p>The presentation focuses on an innovative educational platform designed to democratize and enhance access to education globally. The global education market is valued at USD 5.4 trillion in 2023, with projections to reach USD 9.8 trillion by 2030.</p>
+            
+            <h2>Key Features</h2>
+            <ul>
+                <li><strong>System Architecture:</strong> Overview of the technical foundation.</li>
+                <li><strong>Interactive Learning Tools:</strong> Includes courses, skill trees, quizzes, and flashcards.</li>
+            </ul>
+        
+            <h2>Progress and Planning</h2>
+            <ul>
+                <li>Updates on task progression and project plans.</li>
+                <li>Highlights contributions from team members.</li>
+            </ul>
+        
+            <h2>User Feedback</h2>
+            <p>Surveys reveal high ratings for features like quizzes and interfaces. Areas identified for improvement include:</p>
+            <ul>
+                <li>Content upload and analysis.</li>
+                <li>Adaptability of study plans.</li>
+                <li>Support for complex subjects.</li>
+            </ul>
+        
+            <h2>Business Model</h2>
+            <ul>
+                <li><strong>Revenue:</strong> Subscription-based with tiered plans.</li>
+                <li><strong>Platform:</strong> Initial web application with plans for mobile expansion upon reaching a user threshold.</li>
+                <li><strong>Target Audience:</strong> University students.</li>
+                <li><strong>Marketing:</strong> Social media campaigns on platforms popular among students, such as Instagram and TikTok.</li>
+            </ul>
+        
+            <h2>Conclusion</h2>
+            <p>The presentation concludes with a demo, areas for improvement, and a Q&A session.</p>
+        </div>
     </section>
 
-    <section id="project" class="content-section hidden">
-      <h1>Project</h1>
-      <p>
-        EduxAI is a web application designed to enhance students' academic
-        performance through advanced learning tools. By incorporating
-        technologies such as LLMs, EduxAI helps students grasp course materials
-        more thoroughly by offering explanations on a page-by-page or holistic
-        basis for study resources like textbooks, slides, and syllabi.
-        Interactive features like flashcards, quizzes, and custom study
-        schedules help students stay organized and improve retention. EduxAI
-        will also offer statistics that will help students analyze their work;
-        for example, from the time that students took the course, a graph of
-        overall success will be displayed. Moreover, recharge tests based on
-        what the student has done wrong will be recommended to the student.
-        Moreover, features include a skill tree model, which generates
-        subject-based skill trees that evolve as students complete quizzes, and
-        a report-project checker that verifies the alignment of reports with
-        projects using data from public GitHub repositories. EduxAI will be an
-        extensive framework integrating multiple tools, including the skill tree
-        and report-project checker, to support student learning.
-      </p>
-      <ul>
-        <li>
-          <a href="downloads/CS491_demo_presentation.pdf" download>
-            Project Presentation (PDF)
-          </a>
-        </li>
-      </ul>
-      <div>
-        <h1>EDUX: For Effective Student Learning</h1>
-        <h2>Introduction</h2>
-        <p>
-          The presentation focuses on an innovative educational platform
-          designed to democratize and enhance access to education globally. The
-          global education market is valued at USD 5.4 trillion in 2023, with
-          projections to reach USD 9.8 trillion by 2030.
-        </p>
-
-        <h2>Key Features</h2>
-        <ul>
-          <li>
-            <strong>System Architecture:</strong> Overview of the technical
-            foundation.
-          </li>
-          <li>
-            <strong>Interactive Learning Tools:</strong> Includes courses, skill
-            trees, quizzes, and flashcards.
-          </li>
-        </ul>
-
-        <h2>Progress and Planning</h2>
-        <ul>
-          <li>Updates on task progression and project plans.</li>
-          <li>Highlights contributions from team members.</li>
-        </ul>
-
-        <h2>User Feedback</h2>
-        <p>
-          Surveys reveal high ratings for features like quizzes and interfaces.
-          Areas identified for improvement include:
-        </p>
-        <ul>
-          <li>Content upload and analysis.</li>
-          <li>Adaptability of study plans.</li>
-          <li>Support for complex subjects.</li>
-        </ul>
-
-        <h2>Business Model</h2>
-        <ul>
-          <li>
-            <strong>Revenue:</strong> Subscription-based with tiered plans.
-          </li>
-          <li>
-            <strong>Platform:</strong> Initial web application with plans for
-            mobile expansion upon reaching a user threshold.
-          </li>
-          <li><strong>Target Audience:</strong> University students.</li>
-          <li>
-            <strong>Marketing:</strong> Social media campaigns on platforms
-            popular among students, such as Instagram and TikTok.
-          </li>
-        </ul>
-
-        <h2>Conclusion</h2>
-        <p>
-          The presentation concludes with a demo, areas for improvement, and a
-          Q&A session.
-        </p>
-      </div>
-      <p>
-        EduxAI is a web application designed to enhance students' academic
-        performance through advanced learning tools. By incorporating
-        technologies such as LLMs, EduxAI helps students grasp course materials
-        more thoroughly by offering explanations on a page-by-page or holistic
-        basis for study resources like textbooks, slides, and syllabi.
-        Interactive features like flashcards, quizzes, and custom study
-        schedules help students stay organized and improve retention. EduxAI
-        will also offer statistics that will help students analyze their work;
-        for example, from the time that students took the course, a graph of
-        overall success will be displayed. Moreover, recharge tests based on
-        what the student has done wrong will be recommended to the student.
-        Moreover, features include a skill tree model, which generates
-        subject-based skill trees that evolve as students complete quizzes, and
-        a report-project checker that verifies the alignment of reports with
-        projects using data from public GitHub repositories. EduxAI will be an
-        extensive framework integrating multiple tools, including the skill tree
-        and report-project checker, to support student learning.
-      </p>
+    <section id="project" class="content-section" style="display: none;">
+        <h1>Project</h1>
+        <p>EduxAI is a web application designed to enhance students' academic performance through advanced learning tools. By incorporating technologies such as LLMs, EduxAI helps students grasp course materials more thoroughly by offering explanations on a page-by-page or holistic basis for study resources like textbooks, slides, and syllabi. Interactive features like flashcards, quizzes, and custom study schedules help students stay organized and improve retention. EduxAI will also offer statistics that will help students analyze their work; for example, from the time that students took the course, a graph of overall success will be displayed. Moreover, recharge tests based on what the student has done wrong will be recommended to the student. Moreover, features include a skill tree model, which generates subject-based skill trees that evolve as students complete quizzes, and a report-project checker that verifies the alignment of reports with projects using data from public GitHub repositories. EduxAI will be an extensive framework integrating multiple tools, including the skill tree and report-project checker, to support student learning.</p>
+        <div>
+            <h1>EDUX: For Effective Student Learning</h1>
+            <h2>Introduction</h2>
+            <p>The presentation focuses on an innovative educational platform designed to democratize and enhance access to education globally. The global education market is valued at USD 5.4 trillion in 2023, with projections to reach USD 9.8 trillion by 2030.</p>
+            
+            <h2>Key Features</h2>
+            <ul>
+                <li><strong>System Architecture:</strong> Overview of the technical foundation.</li>
+                <li><strong>Interactive Learning Tools:</strong> Includes courses, skill trees, quizzes, and flashcards.</li>
+            </ul>
+        
+            <h2>Progress and Planning</h2>
+            <ul>
+                <li>Updates on task progression and project plans.</li>
+                <li>Highlights contributions from team members.</li>
+            </ul>
+        
+            <h2>User Feedback</h2>
+            <p>Surveys reveal high ratings for features like quizzes and interfaces. Areas identified for improvement include:</p>
+            <ul>
+                <li>Content upload and analysis.</li>
+                <li>Adaptability of study plans.</li>
+                <li>Support for complex subjects.</li>
+            </ul>
+        
+            <h2>Business Model</h2>
+            <ul>
+                <li><strong>Revenue:</strong> Subscription-based with tiered plans.</li>
+                <li><strong>Platform:</strong> Initial web application with plans for mobile expansion upon reaching a user threshold.</li>
+                <li><strong>Target Audience:</strong> University students.</li>
+                <li><strong>Marketing:</strong> Social media campaigns on platforms popular among students, such as Instagram and TikTok.</li>
+            </ul>
+        
+            <h2>Conclusion</h2>
+            <p>The presentation concludes with a demo, areas for improvement, and a Q&A session.</p>
+        </div>
     </section>
 
-    <section id="documents" class="content-section hidden">
-      <h1>Reports</h1>
-      <p>Download the available reports below:</p>
-      <ul>
-        <!-- href="downloads/[document_name.file_extension]"  -->
-        <li>
-          <a href="downloads/EduForge_LearnSmart_Information_Form.pdf" download>
-            Project Information Form
-          </a>
-        </li>
-        <li>
-          <a href="downloads/T2416_Project_Specification_Document.pdf" download>
-            Project Specification Report
-          </a>
-        </li>
-        <li>
-          <a
-            href="downloads/T2416_Analysis_and_Requirements_Report.pdf"
-            download
-          >
-            Analysis and Requirements Report
-          </a>
-        </li>
-        <li>
-          <a href="downloads/T2416_Detailed_Design_Report.pdf" download>
-            Detailed Design Report
-          </a>
-        </li>
-        <li><a href="downloads/T2416_Senior_Design_Project_Final_Report.pdf" download> Final Report </a></li>
-        <p>
-          Survey Results:
-        </p>
-        <li><a href="downloads/T2416_Edux_Survey_Results.pdf" download> Edux Survey Results </a></li>
-        <li><a href="downloads/T2416_Survey_Analysis.pdf" download> Edux Survey Analysis </a></li>
-      </ul>
+    <section id="documents" class="content-section" style="display: none;">
+        <p>Download </p>
+        <h1>Presentation</h1>
+        <p>Download the presentation below:</p>
+        <ul>
+            <li><a href="downloads/CS491_demo_presentation.pdf" download> CS491 Project Presentation </a></li>
+            <li><a href="downloads/CS492_demo_presentation.pdf" download> CS492 Project Presentation </a></li>
+        </ul>
+        <h1>Reports</h1>
+        <p>Download delivered reports below:</p>
+        <ul>
+            <!-- href="downloads/[document_name.file_extension]"  -->
+            <li><a href="downloads/T2416_EduForge_EduxAI_Information_Form.pdf" download> Project Information Form </a></li>
+            <li><a href="downloads/T2416_Project_Specification_Document.pdf" download> Project Specification Report </a></li>
+            <li><a href="downloads/T2416_Analysis_and_Requirements_Report.pdf" download> Analysis and Requirements Report </a></li>
+            <li><a href="downloads/T2416_Detailed_Design_Report.pdf" download> Detailed Design Report </a></li>
+            <li><a href="downloads/T2416_Senior_Design_Project_Final_Report.pdf" download> Final Report </a></li>
+        </ul>
+        <h1>Survey</h1>
+        <p>Download survey results below:</p>
+        <ul>
+            <li><a href="downloads/T2416_Edux_Survey_Results.pdf" download> Survey Results </a></li>
+            <li><a href="downloads/T2416_Survey_Analysis.pdf" download> Survey Analysis </a></li>
+        </ul>
     </section>
 
-    <section id="members" class="content-section hidden">
-      <h1>Members</h1>
-      <p>Information about the members of our project:</p>
-      <div class="member">
-        <h2>
-          <a
-            href="https://github.com/bilgineroral"
-            target="_blank"
-            rel="noopener"
-            >Bilginer Oral</a
-          >
-        </h2>
-        <p>22103163</p>
-        <p>bilginer.oral@ug.bilkent.edu.tr</p>
-      </div>
-      <div class="member">
-        <h2>
-          <a href="https://github.com/Edizc" target="_blank" rel="noopener"
-            >Cahit Ediz Civan</a
-          >
-        </h2>
-        <p>22003206</p>
-        <p>ediz.civan@ug.bilkent.edu.tr</p>
-      </div>
-      <div class="member">
-        <h2>
-          <a href="https://github.com/EfeKN" target="_blank" rel="noopener"
-            >Efe Kaan Fidancı</a
-          >
-        </h2>
-        <p>22102589</p>
-        <p>kaan.fidanci@ug.bilkent.edu.tr</p>
-        <a href="downloads/T2416-Logbook-Efe-Kaan-Fidanci.pdf" download>
-          Logbook
-        </a>
-      </div>
-      <div class="member">
-        <h2>
-          <a
-            href="https://github.com/gorkemsolun"
-            target="_blank"
-            rel="noopener"
-            >Görkem Kadir Solun</a
-          >
-        </h2>
-        <p>22003214</p>
-        <p>kadir.solun@ug.bilkent.edu.tr</p>
-        <a
-          href="https://docs.google.com/document/d/15SJbAxCU69kDlJ2Ql0oW_2Z9Z0Y-lci7rHW-Ssv1YsA/edit?usp=sharing"
-        >
-          Logbook
-        </a>
-      </div>
-      <div class="member">
-        <h2>
-          <a
-            href="https://github.com/Murat-Cagri"
-            target="_blank"
-            rel="noopener"
-            >Murat Çağrı Kara</a
-          >
-        </h2>
-        <p>22102505</p>
-        <p>cagri.kara@ug.bilkent.edu.tr</p>
-        <a href="downloads/T2416-Logbook-Murat-Çağrı-Kara.pdf" download>
-          Logbook
-        </a>
-      </div>
+    <section id="members" class="content-section" style="display: none;">
+        <h1>Members</h1>
+        <p>Information about the members of our project:</p>
+    
+        <div class="member">
+            <h2><a href="https://github.com/bilgineroral" target="_blank">Bilginer Oral</a></h2>
+            <p>22103163</p>
+            <p>bilginer.oral@ug.bilkent.edu.tr</p>
+        </div>
+    
+        <div class="member">
+            <h2><a href="https://github.com/Edizc" target="_blank">Cahit Ediz Civan</a></h2>
+            <p>22003206</p>
+            <p>ediz.civan@ug.bilkent.edu.tr</p>
+        </div>
+    
+        <div class="member">
+            <h2><a href="https://github.com/EfeKN" target="_blank">Efe Kaan Fidancı</a></h2>
+            <p>22102589</p>
+            <p>kaan.fidanci@ug.bilkent.edu.tr</p>
+            <a href="downloads/T2416-Logbook-Efe-Kaan-Fidanci.pdf" download> Logbook </a>
+        </div>
+    
+        <div class="member">
+            <h2><a href="https://github.com/gorkemsolun" target="_blank">Görkem Kadir Solun</a></h2>
+            <p>22003214</p>
+            <p>kadir.solun@ug.bilkent.edu.tr</p>
+            <a href="https://docs.google.com/document/d/15SJbAxCU69kDlJ2Ql0oW_2Z9Z0Y-lci7rHW-Ssv1YsA/edit?tab=t.0#heading=h.lq1kbul2vtk5"> Logbook </a>
+        </div>
+    
+        <div class="member">
+            <h2><a href="https://github.com/Murat-Cagri" target="_blank">Murat Çağrı Kara</a></h2>
+            <p>22102505</p>
+            <p>cagri.kara@ug.bilkent.edu.tr</p>
+            <a href="downloads/T2416-Logbook-Murat-Çağrı-Kara.pdf" download> Logbook </a>
+        </div>
     </section>
+    
     <script src="js/script.js"></script>
-  </body>
+</body>
 </html>
